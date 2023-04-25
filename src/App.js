@@ -5,7 +5,7 @@ import SplitTextJS from 'split-text-js';
 export default function App() {
   useLayoutEffect(() => {
     const titles = gsap.utils.toArray('.intro-text p');
-    const tl = gsap.timeline({ repeat: 5 });
+    const tl = gsap.timeline({ repeat: -1 });
 
     titles.forEach((title) => {
       const splitTitle = new SplitTextJS(title);
